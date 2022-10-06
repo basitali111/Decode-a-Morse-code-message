@@ -3,13 +3,13 @@ CODE = {
   'B' => '-...',
   'C' => '-.-.',
   'D' => '-..',
-  'E' => '.',   
+  'E' => '.',
   'F' => '..-.',
-  'G' => '--.',   
+  'G' => '--.',
   'H' => '....',
   'I' => '..',
   'J' => '.---',
-  'K' => '-.-',   
+  'K' => '-.-',
   'L' => '.-..',
   'M' => '--',
   'N' => '-.',
@@ -25,31 +25,31 @@ CODE = {
   'X' => '-..-',
   'Y' => '-.--',
   'Z' => '--..'
-}
+}.freeze
 
 def decode_char(morce_code)
-    @character = CODE.key(morce_code)
-    @character
+  @character = CODE.key(morce_code)
+  @character
 end
 
 def decode_entire_word_helper(morce_code)
-    @characters = morce_code.split(" ")
-    @join_character = ""
-    @characters.each do |n|
-        @join_character += decode_char(n)
-    end
-    puts "#@join_character"
+  @characters = morce_code.split
+  @join_character = ""
+  @characters.each do |n|
+    @join_character += decode_char(n)
+  end
+  puts "#@join_character"
 end
 
 def decode_word(entire_word)
-    decode_entire_word_helper(entire_word)
+  decode_entire_word_helper(entire_word)
 end
 
 def decode(entire_message)
-    @characters = entire_message.split('   ')
-    @characters.each do |n|
-     decode_entire_word_helper(n)
-    end
+  @characters = entire_message.split('   ')
+  @characters.each do |n|
+    decode_entire_word_helper(n)
+  end
 end
 
 decode("-- -.--   -. .- -- .")
