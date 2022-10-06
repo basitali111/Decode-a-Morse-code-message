@@ -1,31 +1,30 @@
-
 CODE = {
-    "A" => ".-", 
-    "B" => "-...",
-    "C" => "-.-.",
-    "D" => "-..",
-    "E" => '.',      
-    "F" => '..-.',
-    "G" => '--.',    
-    "H" => '....',   
-    "I" => '..',
-    "J" => '.---',   
-    "K" => '-.-',    
-    "L" => '.-..',
-    "M" => '--',
-    "N" => '-.',
-    "O" => '---',
-    "P" => '.--.',
-    "Q" => '--.-',
-    "R" => '.-.',
-    "S" => '...',
-    "T" => '-',
-    "U" => '..-',
-    "V" => '...-',
-    "W" => '.--',
-    "X" => '-..-',
-    "Y" => '-.--',
-    "Z" => '--..'
+    'A' => '.-', 
+    'B' => '-...',
+    'C' => '-.-.',
+    'D' => '-..',
+    'E' => '.',      
+    'F' => '..-.',
+    'G' => '--.',    
+    'H' => '....',   
+    'I' => '..',
+    'J' => '.---',   
+    'K' => '-.-',    
+    'L' => '.-..',
+    'M' => '--',
+    'N' => '-.',
+    'O' => '---',
+    'P' => '.--.',
+    'Q' => '--.-',
+    'R' => '.-.',
+    'S' => '...',
+    'T' => '-',
+    'U' => '..-',
+    'V' => '...-',
+    'W' => '.--',
+    'X' => '-..-',
+    'Y' => '-.--',
+    'Z' => '--..'
 }
 =begin
 Create a method to decode a Morse code character, takes a string parameter, 
@@ -38,7 +37,7 @@ def decode_char (morce_code)
 
  puts decode_char ".-"
 
- =begin
+=begin
 Create a method to decode an entire word in Morse code, takes a string parameter, 
 and return the string representation. Every character in a 
 word will be separated by a single space (e.g. decode_word("-- -.--") returns "MY").
