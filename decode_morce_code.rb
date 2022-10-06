@@ -34,11 +34,11 @@ end
 
 def decode_entire_word_helper(morce_code)
   @characters = morce_code.split
-  @join_character = ""
+  @join_character = ''
   @characters.each do |n|
     @join_character += decode_char(n)
   end
-  puts "#@join_character"
+  puts @join_character
 end
 
 def decode_word(entire_word)
@@ -52,4 +52,4 @@ def decode(entire_message)
   end
 end
 
-decode("-- -.--   -. .- -- .")
+decode('-- -.--   -. .- -- .')
