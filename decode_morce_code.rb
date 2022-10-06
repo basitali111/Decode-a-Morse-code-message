@@ -1,15 +1,15 @@
 CODE = {
-  'A' => '.-', 
+  'A' => '.-',
   'B' => '-...',
   'C' => '-.-.',
   'D' => '-..',
-  'E' => '.',      
+  'E' => '.',   
   'F' => '..-.',
-  'G' => '--.',    
-  'H' => '....',   
+  'G' => '--.',   
+  'H' => '....',
   'I' => '..',
-  'J' => '.---',   
-  'K' => '-.-',    
+  'J' => '.---',
+  'K' => '-.-',   
   'L' => '.-..',
   'M' => '--',
   'N' => '-.',
@@ -27,12 +27,12 @@ CODE = {
   'Z' => '--..'
 }
 
-def decode_char (morce_code)
+def decode_char(morce_code)
     @character = CODE.key(morce_code)
     @character
 end
 
-def decode_entire_word_helper (morce_code)
+def decode_entire_word_helper(morce_code)
     @characters = morce_code.split(" ")
     @join_character = ""
     @characters.each do |n|
@@ -41,7 +41,7 @@ def decode_entire_word_helper (morce_code)
     puts "#@join_character"
 end
 
-def decode_word (entire_word)
+def decode_word(entire_word)
     decode_entire_word_helper(entire_word)
 end
 
