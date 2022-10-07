@@ -44,6 +44,11 @@ end
 def decode_word(entire_word)
   decode_entire_word_helper(entire_word)
 end
-
+def decode(entire_message)
+  @characters = entire_message.split('   ')
+  @characters.each do |n|
+    decode_entire_word_helper(n)
+  end
+end
 
 decode('-- -.--   -. .- -- .')
